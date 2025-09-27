@@ -43,7 +43,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 # Bot credentials from environment variables (Render compatible)
 API_ID = int(os.environ.get("API_ID", "20288951"))
 API_HASH = os.environ.get("API_HASH", "e8cb5fb7a475b5f5eb3b0ef0e6ca03a8")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8037871175:AAGnJzyLnvptj7c5pG-r3PrXeyZBIaeInVo")
 
 # Initialize Bot Globally (IMPORTANT FIX)
 bot = Client("bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
@@ -258,7 +258,7 @@ async def process_pwwp_subject(session: aiohttp.ClientSession, subject: Dict, se
 def find_pw_old_batch(batch_search):
 
     try:
-        response = requests.get(f"https://abhiguru143.github.io/AS-MULTIVERSE-PW/batch/batch.json")
+        response = requests.get(f"https://freeebatch.github.io/PwCpAppxTxtExtractor/batch.json")
         response.raise_for_status()
         data = response.json()
     except requests.exceptions.RequestException as e:
